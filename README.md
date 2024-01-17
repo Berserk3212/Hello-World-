@@ -1,4 +1,4 @@
-// Галимов Арснг 219/3
+// Галимов Арсен 219/3
 #include <iostream>
 using namespace std;
 
