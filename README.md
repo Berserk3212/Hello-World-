@@ -1,22 +1,16 @@
-﻿// Овчинников Виктор 219/3
+// Галимов Арснг 219/3
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
-// Читаем из потока ввода символы и пишем их в поток вывода,
-// подменяя некоторые на другие (e -> i, o -> u, a -> o).
-int main()
-{
-  for (char ch; cin.get(ch);)
-  {
-    char output = ch;
-    if (ch == 'e')
-      output = 'i';
-    else if (ch == 'o')
-      output = 'u';
-    else if (ch == 'a')
-      output = 'o';
-    cout.put(output);
-  }
-  return EXIT_SUCCESS;
+void main() {
+	setlocale(LC_ALL, "ru");
+
+	double x, y;
+	cout << "Введите координаты точки: ";
+	cin >> x >> y;
+	if ((y > 0.5) && (x*x + y * y > 1))
+		cout << "Точка принадлежит области";
+	else if ((y < 0.5) || (x*x + y * y < 1))
+		cout << "Точка не принадлежит области";
+	else cout << "Точка лежит на границе области";
 }
