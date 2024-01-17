@@ -1,4 +1,4 @@
-﻿// char_subst.cpp
+﻿// Овчинников Виктор 219/3
 #include <iostream>
 #include <cstdlib>
 using namespace std;
